@@ -1,0 +1,250 @@
+      /* GENERAL */
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body .registrar nav ul li a{
+    font-weight: lighter;
+}
+body{
+    background-image: url("../img/bg-2.png"); 
+}
+       /* HEADER */
+.registrar{
+     width: 100%;
+     position: relative;
+    }
+.registrar li{
+     list-style: none;
+     display: inline;
+     font-weight: bold;
+     color: white;
+    text-transform: uppercase;
+    
+    }
+.registrar a{
+     text-decoration: none;
+     color: white;
+     text-transform: uppercase;
+    }
+.registrar header{
+    background-color: rgb(248, 76, 28);
+    overflow: hidden;
+    position: fixed;
+    max-width:1140px;
+    width: 100%;
+    z-index: 1;
+    top:0;
+}
+.registrar header .navegar {
+    float: left;
+   padding-left: 5px;
+    padding-bottom: 0px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    display:none;
+}
+.registrar header ul.navegarCelu{
+    /* padding: 10px; */
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.registrar header .registro{
+    float: right;
+    display: block;
+    letter-spacing: 1px;
+    position: relative;
+    top:20px;
+}
+.registrar header .logo{
+    display:block;
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+/* MAIN */
+
+.registrar main{
+    display: block;
+    width: 350px;
+
+}
+.registrar main h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    padding-top: 130px;
+    margin-bottom: 25px;
+    color: rgb(37, 37, 37);
+}
+.registrar main p{
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.registrar main .generoTitulo{
+    padding-bottom: 20px;
+}
+.registrar main p input{
+    padding: 4px;
+    width:350px;
+    border: gray;
+}
+.registrar main .paises select{
+  border-radius: 10px;
+  padding:5px 10px;
+  
+}
+
+.registrar main .genero input {
+    width: 20px;
+}
+.registrar main .genero{
+    padding-bottom: 0px;
+    font-weight: normal;
+    padding-left: 5px;
+}
+.registrar main .hobbiTitulo{
+    margin-top: 20px;
+}
+.registrar main .hobbi{
+    padding: 0px;
+    font-weight: normal;
+    padding-left: 5px;
+    word-spacing: 5px;
+}
+.registrar main .hobbi input {
+    width: 20px;
+}
+.registrar main .comentarioTitulo{
+    margin-top: 20px;
+    font-weight: bold;
+}
+button{
+    background-color: rgb(34, 115, 255);
+    ;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.registrar main .obligatorio{
+    color: red;
+    padding: 0px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+
+.registrar main .terminos{
+    display: block;
+    font-weight: normal;
+    padding: 10px;
+}
+.registrar main .terminos input{
+    width: 20px;
+}
+#nombre, #email, #password{
+    padding: 10px;
+    margin-top: 10px;
+}
+/* HOVER Y FOCUS */
+.navegarCelu li a:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 1px
+     rgb(255, 230, 0), 0 0 22px #eeff00, 0 0 25px #e5ff00;
+    -webkit-text-fill-color: #f8f8f8;
+    -webkit-text-stroke-color:#ffffff;
+    -webkit-text-stroke-width:0.2px;
+}
+.navegar li a:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 1px
+     rgb(255, 230, 0), 0 0 22px #eeff00, 0 0 25px #e5ff00;
+    -webkit-text-fill-color: #f8f8f8;
+    -webkit-text-stroke-color:#ffffff;
+    -webkit-text-stroke-width:0.2px;
+}
+
+.registro li a:hover{
+    color: #fff;
+    text-shadow: 0 0 10px rgb(255, 230, 0), 0 0 15px #fff, 0 0 1px rgb(255, 238, 0), 0 0 22px #ffe600, 0 0 25px #fbff00;
+    -webkit-text-fill-color: #f8f8f8;
+    -webkit-text-stroke-color:#ffffff;
+    -webkit-text-stroke-width:0.2px;
+}
+
+.logo:hover{
+    background: radial-gradient(rgb(255, 230, 0), rgb(255, 102, 0), rgba(255, 68, 0, 0.575));
+}
+button:hover{
+    background-color: rgb(251, 45, 13);
+}
+
+#nombre:hover{
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+#email:hover{
+    background-color: orangered;
+    border-radius: 5px;
+}
+#password:hover{
+    background-color: orangered;
+    border-radius: 5px;
+}
+#nombre:hover::placeholder{
+    color:white;
+}
+#email:hover::placeholder{
+    color:white;
+}
+#password:hover::placeholder{
+    color:white;
+}
+select:hover{
+    background-color: orangered;
+    color: white;
+}
+select:focus{
+    background-color: orangered;
+    color: white;
+}
+
+/* TABLETS */
+@media(min-width:426px){
+    .registrar header nav .navegar{
+        display: inline;
+        margin-top: 20px;
+        }
+        .registrar header nav .navegarCelu{
+            display: none;
+        }
+        .registro{
+            padding-right: 10px;
+        }
+        .logo{
+            padding-bottom: 10px;
+        }  
+}
+/* LAPTOP EN ADELANTE */
+@media(min-width:1024px){
+    .registrar{
+        max-width: 1140px
+    }
+    .logregistrarin header{
+        width: 100%;
+    }
+    .registrar header .registro{
+        word-spacing: 5px;
+    }
+}

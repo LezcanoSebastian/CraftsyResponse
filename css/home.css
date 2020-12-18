@@ -1,0 +1,338 @@
+  
+  /*          GENERAL        */
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("../img/bg-2.png"); 
+    width: 100%;  
+}
+.home{
+    width: 100%;
+    position: relative;
+
+}
+.home li{
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+
+}
+.home a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* :root{
+    --colorAnaranjado: #ff4500;
+ } *//* Esto es para declarar variables en este caso es para un color para simplificar el trabajo */
+ /* luego se lo llama haciendo por ejemplo background-color: var(--colorAnarnjado) */
+ 
+
+     /* HEADER */
+.home header{
+    background-color: rgb(248, 76, 28);
+    overflow: hidden;
+    position: fixed;
+    max-width:1140px;
+    width: 100%;
+    z-index: 1;
+    top:0;
+}
+.navegar/* Esto es para Tablet en adelante */{
+    float: left;
+   padding-left: 5px;
+    padding-bottom: 0px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    display:none;
+    
+}
+
+.home header ul.navegarCelu{
+    /* padding: 10px; */
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.registro{
+    float: right;
+    display: block;
+    letter-spacing: 1px;
+    position: relative;
+    top:20px;
+}
+body .home nav ul li a{
+    font-weight: lighter;  
+}
+.logo{
+    display:block;
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+
+
+/* SECCION DE PRODUCTOS/MAIN */
+
+.home main{
+    display: block;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+   margin-top:120px;
+}
+.home main section{
+    width: 90%;
+    margin: 5%; 
+    position:relative;
+} 
+.home main section p{
+    line-height: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.home main section h2{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+.home main section img{
+    width: 100%;
+}
+.home main section img.descuento{
+    position: absolute;
+    width: 20%;
+    right: 20px;
+}
+button{
+        background-color: orangered;
+        padding: 5px 5px;
+        margin-bottom: 10px;
+        border:none;
+        font-weight: bold;
+} 
+button:hover{
+    background-color: skyblue;
+    color: black;
+}
+
+
+     /* SECCION LATERAL/ASIDE */ 
+ aside{
+    display: block;
+    width: 95%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+   
+ } 
+ .home aside section article{
+     border: 1px solid skyblue;
+    background-color: white;
+     padding: 5px 5px;
+     color: black;
+     position: relative;
+ }
+ .home aside section article img{
+    overflow: hidden;
+    box-sizing: border-box;   
+ }
+ 
+ .home aside section h2{
+     background-color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid skyblue;
+ }
+ .home aside section article a{
+     color: black;
+     float: right;
+     width: 60%;
+     text-transform: capitalize;
+     font-weight: bolder;
+     padding-top: 10%;
+     padding-left: 5px;
+     /* padding-right: 40px; */
+   
+ }
+ .home aside section img{
+     width: 40%;
+ }
+ .home aside section img.descuento2{
+     position:absolute;
+     width: 15%;
+     right: 0px;
+     top:0px
+ }
+
+ .home aside section div{
+     background-color: white;
+     border: 1px solid skyblue;
+ }
+ .home aside section div img{
+     width: 100%;
+     padding:10px
+ }
+
+ /*       SECCION DE HOVER      */
+ .navegarCelu li a:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 1px
+     rgb(255, 230, 0), 0 0 22px #eeff00, 0 0 25px #e5ff00;
+    -webkit-text-fill-color: #f8f8f8;
+    -webkit-text-stroke-color:#ffffff;
+    -webkit-text-stroke-width:0.2px;
+}
+
+.navegar li a:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 1px
+     rgb(255, 230, 0), 0 0 22px #eeff00, 0 0 25px #e5ff00;
+    -webkit-text-fill-color: #f8f8f8;
+    -webkit-text-stroke-color:#ffffff;
+    -webkit-text-stroke-width:0.2px;
+}
+
+.registro li a:hover{
+    color: #fff;
+    text-shadow: 0 0 10px rgb(255, 230, 0), 0 0 15px #fff, 0 0 1px rgb(255, 238, 0), 0 0 22px #ffe600, 0 0 25px #fbff00;
+    -webkit-text-fill-color: #f8f8f8;
+    -webkit-text-stroke-color:#ffffff;
+    -webkit-text-stroke-width:0.2px;
+}
+
+.logo:hover{
+    background: radial-gradient(rgb(255, 230, 0), rgb(255, 102, 0), rgba(255, 68, 0, 0.575));
+}
+button:hover{
+    background-color: rgb(251, 45, 13);
+}
+
+/* Para teblet */
+@media(min-width:426px){
+    /* HEADER */
+    .home header nav .navegar{
+     display: inline;
+     margin-top: 20px;
+     }
+     .home header nav .navegarCelu{
+         display: none;
+     }
+     .registro{
+         padding-right: 10px;
+     }
+     .logo{
+         padding-bottom: 10px;
+     }
+     /* MAIN */
+    .home main{
+        width: 95%;
+        margin-top: 110px;
+    }
+    .home main section{
+    max-width:46%;
+    float: left;
+    margin: 2%;
+    }
+    .home aside{
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .home aside .tutorial{
+        max-width: 50%;
+        float: left;
+        margin: 0px;
+    }
+    .home aside .publicidad{
+        max-width: 48%;
+        float: right;
+        margin: 0px;
+    }
+}
+/* Para laptop en adelante */
+
+@media(min-width:1024PX){
+    .home{
+        max-width: 1024px
+    }
+    .home header{
+        width: 100%;
+    }
+    .home header .registro{
+        word-spacing: 5px;
+    }
+    .home main{
+        width: 700px;
+        float: left;
+    }
+    .home aside{
+        display: block;
+        float: right;
+        max-width: 300px;
+        /* overflow: hidden;
+        box-sizing: border-box; */
+        /* margin: 10px; */
+        margin-top: 100px;
+     }
+    .home aside .tutorial{
+        max-width: 100%;
+        display: block;
+        float: right;
+        overflow: hidden;
+    }
+    .home aside .publicidad{
+        max-width: 100%;
+        display: block;
+        float: right;
+    }
+}
+
+@media(min-width:1140px){
+    .home{
+        max-width: 1140px
+    }
+    .home header{
+        width: 100%;
+    }
+    .home header .registro{
+        word-spacing: 5px;
+    }
+    .home main{
+        width: 800px;
+        float: left;
+    }
+    .home aside{
+        display: block;
+        float: right;
+        max-width: 320px;
+        /* overflow: hidden;
+        box-sizing: border-box; */
+        margin: 0px;
+        margin-top: 100px;
+     }
+    .home aside .tutorial{
+        max-width: 100%;
+        display: block;
+        float: right;
+        overflow: hidden;
+    }
+    .home aside .publicidad{
+        max-width: 100%;
+        display: block;
+        float: right;
+    }
+
+}
